@@ -41,6 +41,7 @@ variable "zone" {
 variable "owner" {
   description = "The owner of the storage account"
   type        = string
+  default = "Anirudh"
 }
 
 variable "project_name" {
@@ -58,6 +59,7 @@ variable "application_name" {
 variable "business_divsion" {
   description = "Business Division"
   type = string
+  default = "Vertical"
 }
 
 variable "environment" {

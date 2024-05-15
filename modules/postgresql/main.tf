@@ -15,6 +15,8 @@ resource "azurerm_postgresql_server" "main" {
   administrator_login_password  = var.administrator_login_password
   version                       = var.postgresql_version
   ssl_enforcement_enabled       = false
+  ssl_minimal_tls_version_enforced = true
+  public_network_access_enabled = false
 }
 
 resource "azurerm_postgresql_database" "main" {
@@ -28,4 +30,5 @@ resource "azurerm_postgresql_database" "main" {
   lifecycle {
     prevent_destroy = true
   }
+  
 }

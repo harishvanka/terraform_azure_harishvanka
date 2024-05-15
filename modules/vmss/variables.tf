@@ -34,29 +34,32 @@ variable "admin_password" {
     sensitive = ture
 }
 
+### Source Image Refecence Block Variables
 variable "image_publisher" {
-    description = "value"
+    description = "(Required) Specifies the publisher of the image used to create the virtual machines. Changing this forces a new resource to be created."
     type = string
     default = "Canonical"
 }
 
 variable "image_offer" {
-    description = "value"
+    description = "(Required) Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created."
     type = string
     default = ""
 }
 
 variable "image_sku" {
-    description = "value"
+    description = "(Required) Specifies the SKU of the image used to create the virtual machines."
     type = string
     default = ""
 }
 
 variable "image_version" {
-    description = "value"
+    description = "(Required) Specifies the version of the image used to create the virtual machines."
     type = string
     default = ""
 }
+
+#### Tags varialbes
 
 variable "owner" {
   description = "The owner of the storage account"

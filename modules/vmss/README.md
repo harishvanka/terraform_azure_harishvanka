@@ -32,16 +32,16 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_admin_password"></a> [admin\_password](#input\_admin\_password) | (Required) Local admin password | `string` | n/a | yes |
 | <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | (Required) The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created. | `string` | `""` | no |
-| <a name="input_application_name"></a> [application\_name](#input\_application\_name) | The application name that this storage account belongs to | `string` | `"N/A"` | no |
-| <a name="input_business_divsion"></a> [business\_divsion](#input\_business\_divsion) | Business Division | `string` | n/a | yes |
+| <a name="input_application_name"></a> [application\_name](#input\_application\_name) | The application name that this storage account belongs to | `string` | `"app"` | no |
+| <a name="input_business_divsion"></a> [business\_divsion](#input\_business\_divsion) | Business Division | `string` | `"vertical"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment Ex: Dev, QA, etc. | `string` | n/a | yes |
-| <a name="input_image_offer"></a> [image\_offer](#input\_image\_offer) | value | `string` | `""` | no |
-| <a name="input_image_publisher"></a> [image\_publisher](#input\_image\_publisher) | value | `string` | `"Canonical"` | no |
-| <a name="input_image_sku"></a> [image\_sku](#input\_image\_sku) | value | `string` | `""` | no |
-| <a name="input_image_version"></a> [image\_version](#input\_image\_version) | value | `string` | `""` | no |
+| <a name="input_image_offer"></a> [image\_offer](#input\_image\_offer) | (Required) Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created. | `string` | `""` | no |
+| <a name="input_image_publisher"></a> [image\_publisher](#input\_image\_publisher) | (Required) Specifies the publisher of the image used to create the virtual machines. Changing this forces a new resource to be created. | `string` | `"Canonical"` | no |
+| <a name="input_image_sku"></a> [image\_sku](#input\_image\_sku) | (Required) Specifies the SKU of the image used to create the virtual machines. | `string` | `""` | no |
+| <a name="input_image_version"></a> [image\_version](#input\_image\_version) | (Required) Specifies the version of the image used to create the virtual machines. | `string` | `""` | no |
 | <a name="input_location"></a> [location](#input\_location) | (Required) Location of resource group to be created | `string` | `""` | no |
-| <a name="input_owner"></a> [owner](#input\_owner) | The owner of the storage account | `string` | n/a | yes |
-| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The project name that this storage account belongs to | `string` | `"N/A"` | no |
+| <a name="input_owner"></a> [owner](#input\_owner) | The owner of the storage account | `string` | `"Anirudh"` | no |
+| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The project name that this storage account belongs to | `string` | `"ProjectK"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | (Required) Name of resource group | `string` | `""` | no |
 | <a name="input_sku"></a> [sku](#input\_sku) | (Required) )The Virtual Machine SKU for the Scale Set, such as Standard\_F2 | `string` | `""` | no |
 | <a name="input_storage_account_type"></a> [storage\_account\_type](#input\_storage\_account\_type) | (Optional) Storage Account type for os disk and managed disk | `string` | `"Standard_LRS"` | no |
