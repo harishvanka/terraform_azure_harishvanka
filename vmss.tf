@@ -11,5 +11,8 @@ module "vmss" {
     image_sku = "22_04-lts"
     image_version = "Latest"
     environment = "Dev"
+    ip_version = "IPv4"
+    subnet_id = module.subnet2.subnet_name
+
     
 }

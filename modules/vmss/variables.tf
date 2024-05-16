@@ -31,7 +31,7 @@ variable "admin_username" {
 variable "admin_password" {
     description = "(Required) Local admin password"
     type = string
-    sensitive = ture
+    sensitive = true
 }
 
 ### Source Image Refecence Block Variables
@@ -96,6 +96,19 @@ variable "storage_account_type" {
     default = "Standard_LRS"
 }
 
+variable "ip_version" {
+  description = "Version of Ip address Ex: IPv4 ot IPv6"
+  type = string
+  default = "IPv4"
+  
+}
+
+variable "subnet_id" {
+  description = "Subnet id associated with VMSS"
+  type = string
+  default = "N/A"
+  
+}
 # Linux VM NSG Inbound ports.
 variable "web_vmss_nsg_inbound_ports" {
   description = "Web VMSS NSG Inbound Ports"

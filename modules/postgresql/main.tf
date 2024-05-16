@@ -14,8 +14,8 @@ resource "azurerm_postgresql_server" "main" {
   administrator_login           = var.administrator_login
   administrator_login_password  = var.administrator_login_password
   version                       = var.postgresql_version
-  ssl_enforcement_enabled       = false
-  ssl_minimal_tls_version_enforced = true
+  ssl_enforcement_enabled       = true
+  ssl_minimal_tls_version_enforced = "TLS1_2"
   public_network_access_enabled = false
 }
 

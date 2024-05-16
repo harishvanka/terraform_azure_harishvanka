@@ -26,12 +26,6 @@ variable "postgresql_server_sku_name" {
   
 }
 
-variable "environment" {
-  type        = string
-  description = "The environment denotation.d=Development, t=Test, a=Acceptance, p=Production, dt=Dev-Test, ap=Acceptance-Production"
-  default     = "d"
-}
-
 variable "zone" {
   type        = string
   description = "Enter abbreviation for Zone. e=External, i=Internal, m=Management"

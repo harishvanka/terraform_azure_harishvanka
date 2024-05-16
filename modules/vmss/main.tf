@@ -27,7 +27,8 @@ resource "azurerm_linux_virtual_machine_scale_set" "main" {
     ip_configuration {
       name      = "internal"
       primary   = true
-      subnet_id = azurerm_subnet.internal.id
+      version   = var.ip_version
+      subnet_id = var.subnet_id
     }
   }
 }
