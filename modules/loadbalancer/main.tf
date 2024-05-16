@@ -11,8 +11,8 @@ resource "azurerm_public_ip" "main" {
 # Resource-2: Create Azure Standard Load Balancer
 resource "azurerm_lb" "main" {
   name                = var.lb_name
-  location            = var.resource_group_name
-  resource_group_name = var.location
+  location            = var.location
+  resource_group_name = var.resource_group_name
   sku                 = var.lb_sku
   tags                = local.tags
 

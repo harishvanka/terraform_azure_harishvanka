@@ -1,7 +1,7 @@
 module "resource_group" {
     source = "./modules/resourcegroup"
     resource_group_name = "test-resource-group-anirudh"
-    location = "northcentralus"
+    location = "northeurope"
     environment = "Dev"
 }
 

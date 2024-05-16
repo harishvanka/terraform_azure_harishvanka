@@ -6,7 +6,8 @@ module "postgre_backend" {
     postgresql_version = 9.5
     postgresql_database_name = "testpostgres"
     postgresql_server_name = "postgreserver"
-    postgresql_server_sku_name = "Standard"
-    administrator_login = "admin"
-    administrator_login_password = "****"   
+    postgresql_server_sku_name = "B_Gen4_1"
+    administrator_login = "pgsa"
+    administrator_login_password = "Password1234"
+       
 }

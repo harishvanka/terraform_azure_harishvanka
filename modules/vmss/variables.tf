@@ -16,7 +16,7 @@ variable "location" {
     default = ""
 }
 
-variable "sku" {
+variable "vmss_sku" {
     description = "(Required) )The Virtual Machine SKU for the Scale Set, such as Standard_F2"
     type = string
     default = ""

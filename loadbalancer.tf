@@ -1,5 +1,8 @@
 module "web_load_balancer" {
     source = "./modules/loadbalancer"
+
+    resource_group_name = module.resource_group.resource_group_name
+    location = module.resource_group.rg_location
     BackEndAddressPool_name = "test"
     application_name = "sampleapp"
     backend_port = 80
@@ -23,9 +26,9 @@ module "web_load_balancer" {
     frontend_ip_configuration_name = "fip"
     public_ip_allocation_method = "Static"
     public_ip_sku = "Standard"
-    protocol = "p1"
-    protocol_2 = "p2"
-    interval_in_seconds = 2
+    protocol = "Tcp"
+    protocol_2 = "Tcp"
+    interval_in_seconds = 5
     idle_timeout_in_minutes = 4
     idle_timeout_in_minutes_2 = 4
     owner = "Anirudh"
