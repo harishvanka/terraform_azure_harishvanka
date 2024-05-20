@@ -4,6 +4,13 @@ variable "resource_group_name" {
     default = ""
 }
 
+variable "resource_group_count" {
+  description = "Number of resource groups to create"
+  type        = number
+  default     = 1
+}
+
+
 variable "location" {
     description = "Location of resource group to be created"
     type = string

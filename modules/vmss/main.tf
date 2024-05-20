@@ -42,7 +42,7 @@ resource "azurerm_managed_disk" "main" {
   disk_size_gb         = 100
 }
 
-resource "azurerm_virtual_machine_data_disk_attachment" "example" {
+resource "azurerm_virtual_machine_data_disk_attachment" "main" {
   managed_disk_id    = azurerm_managed_disk.main.id
   virtual_machine_id = azurerm_linux_virtual_machine_scale_set.main.id
   lun                = "10"
